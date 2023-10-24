@@ -7,19 +7,30 @@
       <link rel="stylesheet" href="./styles.css">
    </head>
    <body>
+      <audio id="myAudio" preload="auto">
+         <source src="boxing_bell.mp3" type="audio/mpeg">
+      </audio>
+
       <div class="container">
          <div class="timer">
             25:00
          </div>
-         <h1 class="title">
-            CLICK START
-         </h1>
+         <div class="ufc-bar">
+            <div class="bar-1"></div>
+            <div class="bar-2"></div>
+            <div class="bar-3"></div>
+            <div class="bar-4"></div>
+            <div class="bar-5"></div>
+         </div>
+         <div class="belt-container">
+         </div>
          <div class="buttons">
             <button class="start-button">Start</button>
-            <button class="start-button">Pause</button>
-            <button class="start-button">Resume</button>
-            <button class="start-button">Reset</button>
+            <button class="pause-button">Pause</button>
+            <button class="resume-button">Resume</button>
+            <button class="reset-button">Reset</button>
          </div>
+         <h1 class="title">PRESS START</h1>
       </div>
       <script src="./main.js"></script>
    </body>

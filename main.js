@@ -18,8 +18,8 @@ const belt_container = document.querySelector('.belt-container');
 
 //time variables
 //podmoro timer of 25 mins = 25 * 60 secs
-const WORK_TIME = 25 * 60;
-const BREAK_TIME = 5 * 60;
+const WORK_TIME = 4;
+const BREAK_TIME = 2;
 
 let timerID = null;
 var roundCompleted = false; // One Round = Work Timer + Break Timer
@@ -63,7 +63,7 @@ const countDown = (time) => {
       time--;
       if (time < 0){
          stopTimer();
-         if (roundCompleted === false && timer.style.backgroundColor !== "green") {
+         if (roundCompleted === false && timer.style.backgroundColor !== "rgba(0, 255, 0, 0.5)") {
             timerID = startTimer(BREAK_TIME);
             roundCompleted = true;
          } else {
@@ -97,7 +97,7 @@ const startTimer = (startTime) => {
 
       new Notification("PODMORO OVER");
       
-      timer.style.backgroundColor = "green";
+      timer.style.backgroundColor = "rgba(0, 255, 0, 0.5)";
       title.textContent = "BREAK";
    } else {
       //if we are starting a podmoro timer
@@ -119,7 +119,7 @@ const startTimer = (startTime) => {
       updateBar(ufcRound);
       console.log("Podmoro Started!");
       if (startTime == WORK_TIME){
-         timer.style.backgroundColor = "red";
+         timer.style.backgroundColor = "rgba(0, 0, 0, 0)";
       }
       title.textContent = "PODMORO";
    }
@@ -166,7 +166,7 @@ resume_button.addEventListener('click', () => {
 reset_button.addEventListener('click', ()=> {
    roundCompleted = false;
    stopTimer();
-   timer.style.backgroundColor = "red";
+   timer.style.backgroundColor = "rgba(0, 0, 0, 0)";
    timer.textContent = "25:00";
    title.textContent = "PRESS START";
    ufcRound = 0;

@@ -15,3 +15,5 @@ Features so far:
 -Reset button to let you reset everything to where it was at the start
 
 -Notifications for when the 25 minute and 5 minute timer stops
+
+DISCLAIMER: This project is in no way affiliated with the UFC or any other MMA/Combat Sports organizations. This is a non-profit side project of mine made for personal use/learning. 

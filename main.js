@@ -106,7 +106,7 @@ const startTimer = (startTime) => {
       //log it to console
       //change timer to red
       //change title to say podmoro
-      if (justResumed == false) {
+      if (justResumed == false && paused == false) {
          ufcRound++;
       }
       if (ufcRound > 5) {

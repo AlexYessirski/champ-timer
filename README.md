@@ -4,6 +4,7 @@ Champ timer is a project of mine aimed to add an "MMA" theme to a podmoro timer.
 Features so far:
 
 -PODMORO Timer (25 mins) with a 5 minute break that automatically starts when the podmoro is up
+
 -"Rounds" bar based on UFC's overlay for their live fights. Basically, every 25 minutes is a round, so by
   completing a 25 minute timer you advance a round, up to 5
 

@@ -18,8 +18,8 @@ const belt_container = document.querySelector('.belt-container');
 
 //time variables
 //podmoro timer of 25 mins = 25 * 60 secs
-const WORK_TIME = 4;
-const BREAK_TIME = 2;
+const WORK_TIME = 25 * 60;
+const BREAK_TIME = 5 * 60;
 
 let timerID = null;
 var roundCompleted = false; // One Round = Work Timer + Break Timer
